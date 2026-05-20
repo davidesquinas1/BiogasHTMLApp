@@ -1,0 +1,301 @@
+table {
+    border-collapse: collapse;
+    width: 90%;
+	margin: auto;
+	font-family: "Arial Narrow", Arial, sans-serif;
+    font-size: 12px;
+	border-collapse: collapse;
+  }
+  th, td {
+    border: 1px solid #333;
+    padding: 2px;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .primera-fila {
+	height: 40px;
+	font-size: 14px;
+    font-weight: bold;
+  }
+  .segunda-fila th {
+    background-color: #cfd9e6;
+    height: 30px;
+	font-size: 16px;
+    font-weight: bold;
+  }
+  .tercera-fila td {
+    height: 60px;
+  }
+  .fila-normal {
+    height: 25px;
+  }
+  .fila-separacion {
+    height: 9px;
+    border: none;
+  }
+  .celda-negrita {
+    font-weight: bold;
+  }
+  .celda-cursiva {
+    font-style: italic;
+  }
+  .celda-unidades {
+    font-style: normal;
+	font-family: "Arial Narrow", Arial, sans-serif;
+	font-size: 14px;
+	text-align: center;
+	background-color: #e0e0e0;
+  }
+  .celda-observaciones {
+    font-style: italic;
+	font-family: "Arial Narrow", Arial, sans-serif;
+	font-size: 14px;
+	text-align: center;
+  }
+  .celda-energia {
+    background-color: #FF9F29;
+	font-weight: bold;
+	text-align: center;
+  }
+  .celda-total-sustratos {
+    font-size: 14px;
+    font-weight: bold;
+	text-align: right;
+	padding-right:8px;
+  }
+  .justificar-izquierda {
+	text-align: left;
+  }
+  .justificar-derecha {
+	text-align: right;
+  }
+  .justificar-centro {
+    text-align: center;
+  }
+  .titulo {
+    font-family: "Arial Black", Arial, sans-serif;
+	font-size: 16px;
+  }
+  .creditos {
+    font-family: "Arial", Arial, sans-serif;
+	font-size: 12px;
+	color: #20940C;
+  }
+  .fuente-grande {
+    font-size: 16px;
+  }
+  .logoSunowatt {
+	font-family: "Arial Black", Arial, sans-serif;
+	font-size: 20px;
+	color: #0000CD;
+  }
+  .select-sustrato {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    height: 20px;
+    margin: 0;
+    padding: 0 2px;
+	font-family: "Arial Narrow", Arial, sans-serif;
+    font-size: 14px;
+	font-weight: bold;
+	background-color: #FAFABE;
+  }
+  .select-digestores {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    height: 20px;
+    margin: 0;
+    padding: 0 2px;
+	font-family: "Arial Narrow", Arial, sans-serif;
+    font-size: 14px;
+	font-weight: bold;
+	background-color: #C5EBC0;
+  }
+  .th-img {
+    height: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fondo-oscuro {
+    background-color: #4d4d4d;
+  }
+  .fondo-gris-claro {
+    background-color: #D8E6E8;
+  }
+  .fondo-post-it {
+    background-color: #fff88f;
+  }
+  .fondo-agua {
+    background-color:#53B0DB;
+  }
+  .fondo-agua-claro {
+    background-color:#8AEBEB;
+  }
+  .fondo-fraccion-liquida {
+    background-color:#5F91CF;
+  }
+  .fondo-fraccion-solida {
+    background-color:#DBBE69;
+  }
+ .fondo-maximos-recirculacion {
+    background-color:#D4B8F2;
+  }
+  .texto-blanco {
+    color: white;
+  }
+  .caja-texto-cantidad {
+    font-style: normal;
+	font-family: "Arial Narrow", Arial, sans-serif;
+	font-size: 12px;
+	text-align: right;
+	width:90%;
+	background-color:#E8EDED;
+  }
+   .caja-texto-dimensiones {
+    font-style: normal;
+	font-family: "Arial Narrow", Arial, sans-serif;
+	font-size: 12px;
+	text-align: right;
+	width:90%;
+	background-color:#F7F1DC;
+  }
+  .caja-texto-proyecto {
+    font-style: normal;
+	font-family: "Arial Narrow", Arial, sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+	text-align: center;
+	width:95%;
+	border: none;
+	background-color:#ffffff;
+  }
+  .barra-fondo-claro {
+	margin: 0px auto;
+    width: 80%;
+    height: 20px;
+    background-color: #EDF0F0;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+  }
+  .barra-nitrogeno-valor {
+    height: 100%;
+    width: 0%; /* se actualiza con JS */
+    background-color: #F2D600;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    line-height: 20px;
+    color: black;
+    font-weight: bold;
+  }
+  .barra-biometano-valor {
+    height: 100%;
+    width: 0%; /* se actualiza con JS */
+    background-color: #a2ce6b;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    line-height: 20px;
+    color: black;
+    font-weight: bold;
+  }
+  .barra-proporcion-valor {
+    height: 100%;
+    width: 0%; /* se actualiza con JS */
+    background-color: #9FA1A1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    line-height: 20px;
+    color: black;
+    font-weight: bold;
+  }
+   .barra-fraccion-solida-valor {
+    height: 100%;
+    width: 0%; /* se actualiza con JS */
+    background-color: #C4BB2D;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    line-height: 20px;
+    color: black;
+	font-size: 14px;
+    font-weight: bold;
+  }
+   .barra-fraccion-liquida-valor {
+    height: 100%;
+    width: 0%; /* se actualiza con JS */
+    background-color: #52BCD9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    line-height: 20px;
+    color: black;
+	font-size: 14px;
+    font-weight: bold;
+  }
+   .barra-conversion-mo-valor {
+    height: 100%;
+    width: 0%; /* se actualiza con JS */
+    background-color: #DBA8E0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    line-height: 20px;
+    color: black;
+	font-size: 14px;
+    font-weight: bold;
+  }
+   .btn-calcular {
+    font-family: Arial Narrow;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 1px 1px;
+    background-color: #4caf50;
+    color: white;
+    border-style: none;
+	border-radius: 5px;
+    cursor: pointer;
+	width: 95%;
+  }
+  .btn-calcular:hover {
+    background-color: #FFB00D;
+	color: black;
+  }
+  /* Fila de botones */
+  .fila-botones td {
+    border: none !important;
+    padding: 20px 0;
+    background: transparent;
+  }
+  /* Contenedor centrado */
+  .contenedor-botones {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  /* Estilo botones */
+  .btn-accion {
+    padding: 10px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #0A19D8;
+    color: white;
+    transition: 0.2s;
+  }
+  .btn-accion:hover {
+    background-color: #3D5AFE
+  }
