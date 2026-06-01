@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-  console.log("App iniciada");
+  console.log("App iniciada.");
 
   UISelects.inicializar(window.BD_SUSTRATOS.sustratos);
   
@@ -11,28 +11,46 @@ document.addEventListener("DOMContentLoaded", () => {
   UIBloqueos.inicializar();
   
   UIEventosMezcla.inicializar(actualizarEstadoApp);
-
+ 
   actualizarEstadoApp();
 
-  // Botón para calcular porcentajes
+  // botones
   const btnCalcular = document.getElementById("Boton_Calcular");
 
   document
     .getElementById("btn_guardar")
     .addEventListener("click", window.guardarEstado);
 
-  // 1. Botón abre selector de archivo
   document
     .getElementById("btn_cargar")
     .addEventListener("click", () => {
       document.getElementById("input_cargar").click();
     });
 
-  // 2. Cuando el usuario selecciona archivo
   document
     .getElementById("input_cargar")
     .addEventListener("change", window.cargarEstado);
+ 
+  //actualizar el mapa
+  const campoCoordenadas = document.getElementById('ubicacion');
 
+  if (campoCoordenadas) {
+
+    campoCoordenadas.addEventListener('input', () => {
+		const posX = window.obtenerDigitosPorEje('ubicacion', 'x');
+		const posY = window.obtenerDigitosPorEje('ubicacion', 'y');
+        const marcador = document.getElementById('marcador-mapa');
+        
+		if (marcador) {
+            marcador.style.left = posX;
+            marcador.style.top = posY;
+        }
+		
+		console.log("nueva x,y: ", posX, posY);
+		
+  })} 
+  
+  // ejecutar el cálculo
   if (btnCalcular) {
 
     btnCalcular.addEventListener("click", () => {
@@ -582,8 +600,9 @@ document.addEventListener("DOMContentLoaded", () => {
           kDigestado,
           kDigestadoDiv
       );
-
-      let cantidadDigestado = UIFormatter.formatearNumero(digestado.getCantidad(), 0);
+	  
+	  // quitar la recirculación!!
+      let cantidadDigestado = UIFormatter.formatearNumero(digestado.getCantidad() - rec, 0);
       let cantidadDigestadoDiv = UISelectorDivs.obtenerDiv("cantidad_digestado");
 
       UIValores.mostrar(
@@ -808,8 +827,8 @@ document.addEventListener("DOMContentLoaded", () => {
         salidaSolidoDiv
       );
 
-      // calcular datos separado
-      let datosLiquido = UISalidas.calcularDatosSalida(digestado, separadoLiquido, s => s.getCantidad());
+      // calcular datos separado (quitar la recirculación!!)
+      let datosLiquido = UISalidas.calcularDatosSalida(digestado, separadoLiquido, s => s.getCantidad() - rec);
 
       // obtener div
       let salidaLiquidoDiv = UISelectorDivs.obtenerDiv("barra_digestado_liquido");
@@ -869,7 +888,55 @@ document.addEventListener("DOMContentLoaded", () => {
           mSFraccionLiquidaDiv
       );
 
-    });
+	/* actualizar el resumen */
+	
+	/* relojes del resumen */
+	
+	// MS máximo será 10%
+	let m_valor = parseFloat(document.getElementById('ms_digestor_primario_02').innerText.replace(',', '.').trim());
+	console.log("Reloj 1: ", m_valor);
+	let p_valor = Math.min(1, m_valor / 10) * 100;
+    new ControlReloj('reloj_1').actualizar_reloj(p_valor, m_valor);
+    
+	// Tiempo de residencia mínimo serán 40 días (es inverso) 
+	m_valor = parseFloat(document.getElementById('tiempo_residencia').innerText.replace(',', '.').trim());
+	console.log("Reloj 2: ", m_valor);
+	p_valor = Math.min(1, Math.abs((40 / m_valor) - 1)) * 100;
+    new ControlReloj('reloj_2').actualizar_reloj(p_valor, m_valor);
+	
+	// Carga orgánica, máximo 4
+	m_valor = parseFloat(document.getElementById('carga_organica').innerText.replace(',', '.').trim());
+	console.log("Reloj 3: ", m_valor);
+	p_valor = Math.min(1, m_valor / 4) * 100;
+    new ControlReloj('reloj_3').actualizar_reloj(p_valor, m_valor);	
+	
+	// In. amoniacal, máximo 5%
+	m_valor = parseFloat(document.getElementById('inhibicion_amoniacal').innerText.replace(',', '.').trim());
+	console.log("Reloj 4: ", m_valor);
+	p_valor = Math.min(1, m_valor / 5) * 100;
+    new ControlReloj('reloj_4').actualizar_reloj(p_valor, m_valor);	
+	
+	// indicadores resumen
+	
+	document.getElementById('energia_total').innerText = document.getElementById('valor_celda_energia').innerText
+	document.getElementById('capacidad_tratamiento').innerText = document.getElementById('suma_sustratos').innerText
+
+	m_valor = Number(document.getElementById('digestores_primarios').value) + Number(document.getElementById('digestores_secundarios').value);
+	console.log("digestores totales: ", m_valor);
+	document.getElementById('numero_digestores_total').innerText = m_valor;
+	
+	// Mapa
+	
+	const m_mx = window.obtenerDigitosPorEje('ubicacion', 'x');
+	const m_my = window.obtenerDigitosPorEje('ubicacion', 'y');
+	
+	console.log("ubicación x: ", m_mx);
+	console.log("ubicación y: ", m_my);
+	
+	document.getElementById('marcador-mapa').style.left = m_mx;
+	document.getElementById('marcador-mapa').style.top = m_my;
+	
+	});
 
   }
 
