@@ -4,7 +4,7 @@
       DAVID ESQUINAS - GUILLERMO ESQUINAS 
 	  BALANCE DE MATERIA PARA PLANTAS DE BIOGAS -->
 
-<html lang="es">
+<html lang="en">
 
 <head>
 
@@ -12,7 +12,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="./css/styles.css">
 
-<title>Balance de masas biogás</title>
+<title>Biogas mass balance</title>
 
 </head>
 
@@ -36,7 +36,7 @@
   </colgroup>
   
   <tr>
-	<td class="celda-etiqueta-resumen">Energía (GWh/año):</td>
+	<td class="celda-etiqueta-resumen">Energy (GWh/year):</td>
 	<td class="celda-texto-resumen" id="energia_total">0,00</td>
 	
 	<td rowspan=3 style="border: none;">
@@ -44,7 +44,7 @@
 	<!-- RELOJ 1 -->
 	<div style="text-align: center; background: #f5f5f5; padding: 10px; border-radius: 8px; width: 100px; box-shadow: 0 3px 5px rgba(0,0,0,0.1); font-family: sans-serif; display: inline-block;">
 		
-		<span style="font-weight: bold; font-size: 12px; color: #333; display: block; margin-bottom: 2px;">Materia seca</span>
+		<span style="font-weight: bold; font-size: 12px; color: #333; display: block; margin-bottom: 2px;">Dry matter</span>
   
 		<svg width="70" height="70" viewBox="0 0 100 100">
 			<path d="M 20 80 A 40 40 0 1 1 80 80" fill="none" stroke="#ddd" stroke-width="8" stroke-linecap="round"/>
@@ -67,7 +67,7 @@
 	<!-- RELOJ 2 -->
 	<div style="text-align: center; background: #f5f5f5; padding: 10px; border-radius: 8px; width: 100px; box-shadow: 0 3px 5px rgba(0,0,0,0.1); font-family: sans-serif; display: inline-block;">
 		
-		<span style="font-weight: bold; font-size: 12px; color: #333; display: block; margin-bottom: 2px;">Tiempo</span>
+		<span style="font-weight: bold; font-size: 12px; color: #333; display: block; margin-bottom: 2px;">Time</span>
   
 		<svg width="70" height="70" viewBox="0 0 100 100">
 			<path d="M 20 80 A 40 40 0 1 1 80 80" fill="none" stroke="#ddd" stroke-width="8" stroke-linecap="round"/>
@@ -90,7 +90,7 @@
 	<!-- RELOJ 3 -->
 	<div style="text-align: center; background: #f5f5f5; padding: 10px; border-radius: 8px; width: 100px; box-shadow: 0 3px 5px rgba(0,0,0,0.1); font-family: sans-serif; display: inline-block;">
 		
-		<span style="font-weight: bold; font-size: 12px; color: #333; display: block; margin-bottom: 2px;">Carga orgánica</span>
+		<span style="font-weight: bold; font-size: 12px; color: #333; display: block; margin-bottom: 2px;">Organic load</span>
   
 		<svg width="70" height="70" viewBox="0 0 100 100">
 			<path d="M 20 80 A 40 40 0 1 1 80 80" fill="none" stroke="#ddd" stroke-width="8" stroke-linecap="round"/>
@@ -112,7 +112,7 @@
 	<!-- RELOJ 4 -->
 	<div style="text-align: center; background: #f5f5f5; padding: 10px; border-radius: 8px; width: 100px; box-shadow: 0 3px 5px rgba(0,0,0,0.1); font-family: sans-serif; display: inline-block;">
 		
-		<span style="font-weight: bold; font-size: 12px; color: #333; display: block; margin-bottom: 2px;">Inhibición NH<sub style="font-size: 10px;">4</sub>+</span>
+		<span style="font-weight: bold; font-size: 12px; color: #333; display: block; margin-bottom: 2px;">Inhibition NH<sub style="font-size: 10px;">4</sub>+</span>
   
 		<svg width="70" height="70" viewBox="0 0 100 100">
 			<path d="M 20 80 A 40 40 0 1 1 80 80" fill="none" stroke="#ddd" stroke-width="8" stroke-linecap="round"/>
@@ -150,22 +150,22 @@
   </tr>
   
   <tr>
-	<td class="celda-etiqueta-resumen">Capacidad (t/año):</td>
+	<td class="celda-etiqueta-resumen">Throughput (t/year):</td>
 	<td class="celda-texto-resumen" id="capacidad_tratamiento">0</td>
   </tr>
   
   <tr>
-	<td class="celda-etiqueta-resumen">Digestores (u):</td>
+	<td class="celda-etiqueta-resumen">Digesters (u):</td>
 	<td class="celda-texto-resumen" id="numero_digestores_total">0</td>
   </tr>
  
   <tr>
 	<td class="celda-nota-resumen"></td>
 	<td class="celda-nota-resumen"></td>
-	<td class="celda-nota-resumen">Máximo 10%</td>
-	<td class="celda-nota-resumen">Mínimo 40 días</td>
-	<td class="celda-nota-resumen">Máximo 4 (kg·m<sup style="font-size: 10px;">3</sup>/día)</td>
-	<td class="celda-nota-resumen">Máximo 5%</td>
+	<td class="celda-nota-resumen">Max 10%</td>
+	<td class="celda-nota-resumen">Min 40 days</td>
+	<td class="celda-nota-resumen">Max 4 (kg·m<sup style="font-size: 10px;">3</sup>/day)</td>
+	<td class="celda-nota-resumen">Max 5%</td>
 	
 	<td style="border:none;">
 		<input type="text" class="caja-texto-mapa" value="0" id="ubicacion">
@@ -202,24 +202,24 @@
   <!-- Fila 1: títulos -->
   <tr class="primera-fila">
 		<td class="logoSunowatt">Sunowatt</td>
-		<td colspan="6" class="titulo">BALANCE PLANTA BIOGÁS</td>
-		<td colspan="5"><input type="text" class="caja-texto-proyecto" value="<Identificador del proyecto>" id="titulo_proyecto" ></td>
+		<td colspan="6" class="titulo">BIOGAS PLANT BALANCE</td>
+		<td colspan="5"><input type="text" class="caja-texto-proyecto" value="<Project id>" id="titulo_proyecto" ></td>
   </tr>
 
   <!-- Fila 2: encabezados -->
   <tr class="segunda-fila">
-		<th>Sustratos</th>
-		<th>Cantidad</th>
-		<th>Proporción</th>
-		<th>Nitrógeno</th>
-		<th>Biometano</th>
-		<th>Materia seca</th>
-		<th>Materia orgánica</th>
-		<th>Materia orgánica</th>
-		<th>Riqueza en CH<sub>4</sub></th>
-		<th>Producción biogás</th>
-		<th>Biometano</th>
-		<th>Digestión</th>
+		<th>Substrates</th>
+		<th>Quantity</th>
+		<th>Proportion</th>
+		<th>Nitrogen</th>
+		<th>Biomethane</th>
+		<th>Dry matter</th>
+		<th>Organic matter</th>
+		<th>Organic matter</th>
+		<th>CH<sub>4</sub> content</th>
+		<th>Biogas production</th>
+		<th>Biomethane</th>
+		<th>Digestion</th>
   </tr>
 
   <!-- Fila 3: imágenes -->
@@ -240,18 +240,18 @@
   
   <!-- Fila 4: unidades -->
   <tr class="fila-normal">
-		<td class="celda-negrita fuente-grande fondo-oscuro texto-blanco">SUSTRATO</td>
-		<td class="celda-unidades">(t/año)</td>
+		<td class="celda-negrita fuente-grande fondo-oscuro texto-blanco">SUBSTRATE</td>
+		<td class="celda-unidades">(t/year)</td>
 		<td class="celda-unidades">(%)</td>
-		<td class="celda-unidades">(N<sub>total</sub> (t/año)</td>
+		<td class="celda-unidades">(N<sub>total</sub> (t/year)</td>
 		<td class="celda-unidades">CH<sub style="font-size: 10px;">4</sub>(Nm<sup style="font-size: 10px;">3</sup>/h)</td>
 		<td class="celda-unidades">(%)</td>
 		<td class="celda-unidades">(%)</td>
 		<td class="celda-unidades">(%)</td>
 		<td class="celda-unidades">(% CH<sub style="font-size: 10px;">4</sub> vol)</td>
 		<td class="celda-unidades">(Nm<sup style="font-size: 10px;">3</sup>/t<sub>s</sub>)</td>
-		<td class="celda-unidades">(Bio-CH<sub style="font-size: 10px;">4</sub> (Nm<sup style="font-size: 10px;">3</sup>/año)</td>
-		<td class="celda-negrita fondo-gris-claro">Tiempo retención</td>
+		<td class="celda-unidades">(Bio-CH<sub style="font-size: 10px;">4</sub> (Nm<sup style="font-size: 10px;">3</sup>/year)</td>
+		<td class="celda-negrita fondo-gris-claro">Retention time</td>
   </tr>
   
   <!-- Fila 5: observaciones -->
@@ -262,12 +262,12 @@
 		<td class="celda-observaciones">--</td>
 		<td class="celda-observaciones">(8.400 h)</td>
 		<td class="celda-observaciones">--</td>
-		<td class="celda-observaciones">(sobre total)</td>
-		<td class="celda-observaciones">(sobre materia seca)</td>
+		<td class="celda-observaciones">(based on total)</td>
+		<td class="celda-observaciones">(based on dry matter)</td>
 		<td class="celda-observaciones">--</td>
-		<td class="celda-observaciones">(ton. sustrato)</td>
-		<td class="celda-observaciones">(bruto)</td>
-		<td class="celda-observaciones">(días)</td>
+		<td class="celda-observaciones">(ton. substrate)</td>
+		<td class="celda-observaciones">(raw)</td>
+		<td class="celda-observaciones">(days)</td>
   </tr>
 
   <!-- Listas desplegables sustratos -->
@@ -338,7 +338,7 @@
 		<td><div class="celda-negrita" id="riqueza_04">0</div></td>
 		<td><div class="celda-negrita" id="produccion_biogas_04">0</div></td>
 		<td><div class="celda-negrita" id="biometano_reformado_04">0</div></td>
-		<td rowspan="3" class="celda-negrita fondo-gris-claro">Conversión global de la materia orgánica</td>
+		<td rowspan="3" class="celda-negrita fondo-gris-claro">Overall organic matter conversion</td>
   </tr>
   
   <tr class="fila-separacion"><td colspan="12"></td></tr>
@@ -413,7 +413,7 @@
 		<td><div class="celda-negrita" id="riqueza_08">0</div></td>
 		<td><div class="celda-negrita" id="produccion_biogas_08">0</div></td>
 		<td><div class="celda-negrita" id="biometano_reformado_08">0</div></td>
-		<td rowspan="2" class="celda-negrita fondo-gris-claro">Punto de trabajo MS(%)</td>
+		<td rowspan="2" class="celda-negrita fondo-gris-claro">Operating point DM (%)</td>
   </tr>
   
   <tr class="fila-separacion"><td colspan="12"></td></tr>
@@ -455,7 +455,7 @@
 
   <!-- Fila 16 -->
   <tr class="fila-normal">
-		<td class="celda-negrita fuente-grande justificar-derecha fondo-post-it">Subtotal sustratos</td>
+		<td class="celda-negrita fuente-grande justificar-derecha fondo-post-it">Subtotal substrates</td>
 		<td class="celda-total-sustratos" id="suma_sustratos">0</td>
 		<td><div class="celda-negrita" id="proporcion_premezcla">0</div></td>
 		<td><div class="celda-negrita" id="nitrogeno_premezcla">0</div></td>
@@ -466,16 +466,16 @@
 		<td><div class="celda-negrita" id="riqueza_premezcla">0</div></td>
 		<td><div class="celda-negrita" id="produccion_biogas_premezcla">0</div></td>
 		<td><div class="celda-negrita" id="biometano_reformado_premezcla">0</div></td>
-		<td class="celda-negrita fondo-gris-claro">Primario | Secundario</td>
+		<td class="celda-negrita fondo-gris-claro">Primary | Secondary</td>
   </tr>
 
   <tr class="fila-separacion"><td colspan="12"></td></tr>
 
   <!-- Fila 17 -->
   <tr class="fila-normal">
-		<td class="celda-negrita fuente-grande fondo-agua">DILUCIÓN</td>
+		<td class="celda-negrita fuente-grande fondo-agua">DILUTION</td>
 		<td><input type="text" min="0" class="caja-texto-cantidad" value="0" id="cantidad_11" ></td>
-		<td class="celda-negrita fondo-maximos-recirculacion">Máxima materia seca (%)</td>
+		<td class="celda-negrita fondo-maximos-recirculacion">Maximum dry matter (%)</td>
 		<td>--</td>
 		<td>--</td>
 		<td>--</td>
@@ -491,7 +491,7 @@
 
   <!-- Fila 18 -->
   <tr class="fila-normal">
-		<td class="celda-negrita fuente-grande fondo-agua-claro">RECIRCULACIÓN</td>
+		<td class="celda-negrita fuente-grande fondo-agua-claro">RECIRCULATION</td>
 		<td><input type="text" min="0" class="caja-texto-cantidad" value="0" id="cantidad_12" ></td>
 		<td><input type="text" min="0" class="caja-texto-cantidad" value="3,35" id="ms_max_recirculacion"></td>
 		<td>--</td>
@@ -501,7 +501,7 @@
 		<td><input type="text" min="0" class="caja-texto-cantidad" value="0,45" id="max_NH4"></td>
 		<td><input type="text" min="0" class="caja-texto-cantidad" value="0,60" id="max_P2O5"></td>
 		<td><input type="text" min="0" class="caja-texto-cantidad" value="0,50" id="max_K2O"></td>
-		<td class="celda-negrita fondo-maximos-recirculacion">Máx.NO|NH<sub style="font-size: 10px;">4</sub>|P<sub style="font-size: 10px;">2</sub>O<sub style="font-size: 10px;">5</sub>|K<sub style="font-size: 10px;">2</sub>O(%)</td>
+		<td class="celda-negrita fondo-maximos-recirculacion">Max.NO|NH<sub style="font-size: 10px;">4</sub>|P<sub style="font-size: 10px;">2</sub>O<sub style="font-size: 10px;">5</sub>|K<sub style="font-size: 10px;">2</sub>O(%)</td>
 		<td><div class="celda-negrita" id="ms_digestor_secundario_02">0</div></td>
   </tr>
   
@@ -509,9 +509,9 @@
   
   <!-- Fila 19-->
   <tr class="fila-normal">	
-		<td class="celda-negrita justificar-derecha fuente-grande fondo-oscuro texto-blanco">Totales</td>
+		<td class="celda-negrita justificar-derecha fuente-grande fondo-oscuro texto-blanco">Total</td>
 		<td><div class="celda-negrita" id="celda_totales">0</div></td>
-		<td class="celda-negrita fondo-maximos-recirculacion">Máx. [N] en Digestado (%)</td>
+		<td class="celda-negrita fondo-maximos-recirculacion">Max. [N] in Digestate (%)</td>
 		<td><div class="celda-negrita" id="nitrogeno_total">0</div></td>
 		<td><div class="celda-negrita" id="biometano_total">0</div></td>
 		<td><div class="celda-negrita" id="materia_seca_total">0</div></td>
@@ -522,36 +522,36 @@
 		<td class="celda-negrita">
 			<div id="valor_celda_energia">0</div>
 		</td>
-		<td class="celda-energia">ENERGÍA (GWh/año)</td>
+		<td class="celda-energia">ENERGY (GWh/year)</td>
   </tr>
 
   <tr class="fila-separacion"><td colspan="12"></td></tr>
 
   <!-- Fila 20 -->
   <tr class="fila-normal">
-		<td class="celda-negrita fuente-grande fondo-fraccion-solida">SALIDA DIGESTADO SÓLIDO</td>
+		<td class="celda-negrita fuente-grande fondo-fraccion-solida">SOLID DIGESTATE OUTPUT</td>
 		<td><div class="barra-fondo-claro"><div class="barra-fraccion-solida-valor" style="width: 0%;" id="barra_digestado_solido">0,0</div></div></td>
 		<td><div class="celda-negrita" id="cN_Digestado">0,0</div></td>
 		<td><div class="barra-fondo-claro"><div class="barra-nitrogeno-valor" style="width: 0%;" id="barra_nitrogeno_12">0,0</div></div></td>
 		<td>--</td>
 		<td>--</td>
-		<td colspan="2" class="celda-negrita fondo-gris-claro justificar-derecha">(~75%) Conversión MO en primario (%)</td>
+		<td colspan="2" class="celda-negrita fondo-gris-claro justificar-derecha">(~75%) OM conversion in primary (%)</td>
 		<td><input type="text" class="caja-texto-cantidad" value="77,4" id="conversion_mo_primario"></td>
-		<td colspan="2" class="celda-negrita fondo-gris-claro justificar-derecha">Gases de rechazo (t/año)</td>
+		<td colspan="2" class="celda-negrita fondo-gris-claro justificar-derecha">Off-gases (t/year)</td>
 		<td><div class="celda-negrita" id="gases_rechazo">0</div></td>
   </tr>
 
   <!-- Fila 21 -->
   <tr class="fila-normal">
-		<td class="celda-negrita fuente-grande fondo-fraccion-liquida">SALIDA DIGESTADO LÍQUIDO</td>
+		<td class="celda-negrita fuente-grande fondo-fraccion-liquida">LIQUID DIGESTATE OUTPUT</td>
 		<td><div class="barra-fondo-claro"><div class="barra-fraccion-liquida-valor" style="width: 0%;" id="barra_digestado_liquido">0,0</div></div></td>
 		<td>--</td>
 		<td><div class="barra-fondo-claro"><div class="barra-nitrogeno-valor" style="width: 0%;" id="barra_nitrogeno_13">0,0</div></div></td>
 		<td>--</td>
 		<td>--</td>
-		<td colspan="2" class="celda-negrita fondo-gris-claro justificar-derecha">(~25%) Materia seca fracción sólida (%)</td>
+		<td colspan="2" class="celda-negrita fondo-gris-claro justificar-derecha">(~25%) Solid fraction dry matter (%)</td>
 		<td><input type="text" class="caja-texto-cantidad" value="25,0" id="ms_fraccion_solida"></td>
-		<td colspan="2" class="celda-negrita fondo-gris-claro justificar-derecha">Biometano reformado (t/año)</td>
+		<td colspan="2" class="celda-negrita fondo-gris-claro justificar-derecha">Upgraded biomethane (t/year)</td>
 		<td><div class="celda-negrita" id="biometano_reformado">0</div></td>
   </tr>
 
@@ -559,8 +559,8 @@
   <tr class="fila-normal">
 		<td class="justificar-derecha">[N-NH<sub style="font-size: 10px;">4</sub><sup style="font-size: 10px;">+</sup>] (mg/l)</td>
 		<td><div class="celda-negrita" id="nitrogeno_amoniacal_digestado">0</div></td>
-		<td rowspan="5" class="celda-negrita fondo-gris-claro justificar-centro">Digestores</td>
-		<td class="celda-negrita fondo-gris-claro justificar-centro">Primario (ud)</td>
+		<td rowspan="5" class="celda-negrita fondo-gris-claro justificar-centro">Digesters</td>
+		<td class="celda-negrita fondo-gris-claro justificar-centro">Primary (ud)</td>
 		<td><select class="select-digestores" id="digestores_primarios"><option value="0" selected>0</option><option value="1" selected>1</option><option value="2">2</option><option value="3">3</option>
 																		<option value="4">4</option><option value="5">5</option><option value="6">6</option>
 																		<option value="7">7</option><option value="8">8</option><option value="9">9</option>
@@ -571,9 +571,9 @@
 			</select>
 		</td>
 		<td rowspan="2" justificado-centro>--</td>
-		<td colspan="2" class="celda-negrita fondo-gris-claro justificar-derecha">(ajustar)<sup>(1)</sup> Rendimiento separador (%)</td>
+		<td colspan="2" class="celda-negrita fondo-gris-claro justificar-derecha">(ajust)<sup>(1)</sup> Separator efficiency (%)</td>
 		<td><input type="text" class="caja-texto-cantidad" value="25,0" id="rendimiento_separador"></td>
-		<td colspan="2" class="celda-negrita fondo-gris-claro justificar-derecha">MS digestor primario (%)</td>
+		<td colspan="2" class="celda-negrita fondo-gris-claro justificar-derecha">Primary digester DM (%)</td>
 		<td><div class="celda-negrita" id="ms_digestor_primario">0</div></td>
   </tr>
   
@@ -581,11 +581,11 @@
   <tr class="fila-normal">
 		<td class="justificar-derecha">[N-NO<sub style="font-size: 10px;">3</sub>] (mg/l)</td>
 		<td><div class="celda-negrita" id="nitrogeno_organico_digestado">0</div></td>
-		<td class="celda-negrita fondo-gris-claro justificar-centro">Diámetro (m)</td>
+		<td class="celda-negrita fondo-gris-claro justificar-centro">Diameter (m)</td>
 		<td><input type="text" class="caja-texto-dimensiones" value="30,00" id="dimension_digestores_01" ></td>
-		<td colspan="2" class="celda-negrita fondo-gris-claro justificar-derecha">(1) (3% - 6 %) Materia seca fracción líquida (%)</td>
+		<td colspan="2" class="celda-negrita fondo-gris-claro justificar-derecha">(1) (3% - 6 %) Liquid fraction dry matter (%)</td>
 		<td><div class="celda-negrita" id="ms_fraccion_liquida">0</div></td>
-		<td colspan="2" class="celda-negrita fondo-gris-claro justificar-derecha">MS salida digestado (%)</td>
+		<td colspan="2" class="celda-negrita fondo-gris-claro justificar-derecha">Digestate output DM (%)</td>
 		<td><div class="celda-negrita" id="ms_salida_digestado">0</div></td>
   </tr>
   
@@ -593,7 +593,7 @@
   <tr class="fila-normal">
 		<td class="justificar-derecha">[P<sub style="font-size: 10px;">2</sub>O<sub style="font-size: 10px;">5</sub>] (mg/l)</td>
 		<td><div class="celda-negrita" id="fosforo_digestado">0</div></td>
-		<td class="celda-negrita fondo-gris-claro justificar-centro">Secundario (ud)</td>
+		<td class="celda-negrita fondo-gris-claro justificar-centro">Secondary (ud)</td>
 		<td><select class="select-digestores" id="digestores_secundarios"><option value="0" selected>0</option><option value="1">1</option><option value="2">2</option>
 																		<option value="3">3</option><option value="4">4</option><option value="5">5</option>
 																		<option value="6">6</option><option value="7">7</option><option value="8">8</option>
@@ -604,9 +604,9 @@
 			</select>
 		</td>
 		<td>--</td>
-		<td colspan="2" class="celda-negrita fondo-gris-claro justificar-derecha">Eficienca reformado (%)</td>
+		<td colspan="2" class="celda-negrita fondo-gris-claro justificar-derecha">Upgrading efficiency(%)</td>
 		<td><input type="text" class="caja-texto-cantidad" value="98,4" id="eficiencia_reformado"></td>
-		<td colspan="2" class="celda-negrita fondo-gris-claro justificar-derecha">( &lt; 4) Carga orgánica (kg<sub>mo</sub>/m<sup style="font-size: 10px;">3</sup>·día)</td>
+		<td colspan="2" class="celda-negrita fondo-gris-claro justificar-derecha">( &lt; 4) Organic load (kg<sub>mo</sub>/m<sup style="font-size: 10px;">3</sup>·day)</td>
 		<td><div class="celda-negrita" id="carga_organica">0</div></td>
   </tr>
   
@@ -614,22 +614,22 @@
   <tr class="fila-normal">
 		<td class="justificar-derecha">[K<sub style="font-size: 10px;">2</sub>O] (mg/l)</td>
 		<td><div class="celda-negrita" id="potasio_digestado">0</div></td>
-		<td class="celda-negrita fondo-gris-claro justificar-centro">Diámetro (m)</td>
+		<td class="celda-negrita fondo-gris-claro justificar-centro">Diameter (m)</td>
 		<td><input type="text" class="caja-texto-dimensiones" value="32,00" id="dimension_digestores_02"></td>
-		<td colspan="3"><button id="Boton_Calcular" class="btn-calcular">Calcular</button></td>
+		<td colspan="3"><button id="Boton_Calcular" class="btn-calcular">Calculate</button></td>
 		<td>--</td>
-		<td colspan="2" class="celda-negrita fondo-gris-claro justificar-derecha">( &lt; 5%) Inhibición amoniacal (p NH<sub style="font-size: 10px;">4</sub><sup style="font-size: 10px;">+</sup>/p mo)</td>
+		<td colspan="2" class="celda-negrita fondo-gris-claro justificar-derecha">( &lt; 5%) Ammonia inhibition (p NH<sub style="font-size: 10px;">4</sub><sup style="font-size: 10px;">+</sup>/p mo)</td>
 		<td><div class="celda-negrita" id="inhibicion_amoniacal">0</div></td>
   </tr>
   
   <!-- Fila 26 -->
   <tr class="fila-normal">
-		<td class="celda-negrita justificar-derecha">Total salida digestado</td>
+		<td class="celda-negrita justificar-derecha">Total digestate output</td>
 		<td><div class="celda-negrita" id="cantidad_digestado">0</div></td>
-		<td class="celda-negrita fondo-gris-claro justificar-centro">Altura útil (m)</td>
+		<td class="celda-negrita fondo-gris-claro justificar-centro">Working height (m)</td>
 		<td><input type="text" class="caja-texto-dimensiones" value="7,00" id="dimension_digestores_03"></td>
 		<td>--</td>
-		<td class="celda-negrita fondo-gris-claro justificar-izquierda">Volumen DA (m<sup style="font-size: 10px;">3</sup>)</td>
+		<td class="celda-negrita fondo-gris-claro justificar-izquierda">AD Volumen (m<sup style="font-size: 10px;">3</sup>)</td>
 		<td><div class="celda-negrita" id="volumen_total_digestores">0</div></td>
 		<td>--</td>
 		<td colspan="2" class="celda-negrita fondo-gris-claro justificar-derecha">PCI ISO 6976:2016 (kWh/Nm<sup style="font-size: 10px;">3</sup>)</td>
@@ -641,15 +641,15 @@
 	<tr class="fila-botones">
 		<td colspan="12">
 			<div class="contenedor-botones">
-				<button id="btn_cargar" class="btn-accion">Cargar</button>
+				<button id="btn_cargar" class="btn-accion">Load</button>
 				<input
 				type="file"
 				id="input_cargar"
 				accept=".json"
 				style="display:none"
 				/>
-				<button id="btn_guardar" class="btn-accion">Guardar</button>
-				<button id="btn_ocultar_resumen" class="btn-accion" onclick="alternarVisibilidad()">Ocultar Panel</button>
+				<button id="btn_guardar" class="btn-accion">Save</button>
+				<button id="btn_ocultar_resumen" class="btn-accion" onclick="alternarVisibilidad()">Hide Panel</button>
 			</div>
 		</td>
 	</tr>

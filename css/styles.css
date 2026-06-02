@@ -334,10 +334,8 @@ table {
 	background-color: #ffffff;
 	border: none !important;
   }
-  
  /* RELOJES */
- 
-  /* Contenedor principal de los relojes */
+ /* contenedor principal de los relojes */
  .contenedor-relojes {
   display: flex;
   gap: 20px;
@@ -345,7 +343,7 @@ table {
   justify-content: center;
   padding: 20px;
 }
- /* Tarjeta de cada reloj */
+ /* tarjeta reloj */
  .tarjeta-reloj {
   text-align: center;
   background: #f5f5f5;
@@ -360,7 +358,7 @@ table {
   display: block;
   margin-bottom: 5px;
 }
- /* El cuenta-kilómetros digital */
+ /* cuenta-kilómetros digital */
  .odometro-digital {
   background: #222;
   color: #00ff00;
@@ -373,12 +371,19 @@ table {
   margin-top: 10px;
   border: 2px solid #444;
 }
-
 /* MAPA */
-
 .th-img-map {
     height: 100px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+  .caja-texto-mapa {
+    font-style: normal;
+	font-family: "Arial Narrow", Arial, sans-serif;
+	font-size: 12px;
+	text-align: center;
+	width:20%;
+	border: 1px solid #444;
+	background-color:#ffffff;
   }
