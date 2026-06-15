@@ -35,9 +35,9 @@
       }
 
       // 4. Cambiar el color del texto digital según la zona de la aguja
-      if (p < 70) {
+      if (p < 50) {
         this.nodoDigital.style.color = '#00ff00'; // Verde
-      } else if (p >= 70 && p < 90) {
+      } else if (p >= 50 && p < 75) {
         this.nodoDigital.style.color = '#ffc107'; // Amarillo
       } else {
         this.nodoDigital.style.color = '#ff3b30'; // Rojo

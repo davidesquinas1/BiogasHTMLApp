@@ -1,0 +1,197 @@
+{
+  "ubicacion": {
+    "value": "5949",
+    "disabled": false,
+    "readonly": false
+  },
+  "titulo_proyecto": {
+    "value": "LA LLOSA",
+    "disabled": false,
+    "readonly": false
+  },
+  "sustrato_01": {
+    "value": "PIG SLURRY",
+    "disabled": false,
+    "readonly": false
+  },
+  "cantidad_01": {
+    "value": "96.790",
+    "disabled": false,
+    "readonly": false
+  },
+  "sustrato_02": {
+    "value": "SOW SLURRY",
+    "disabled": false,
+    "readonly": false
+  },
+  "cantidad_02": {
+    "value": "5.000",
+    "disabled": false,
+    "readonly": false
+  },
+  "sustrato_03": {
+    "value": "FRESH CATTLE MANURE",
+    "disabled": false,
+    "readonly": false
+  },
+  "cantidad_03": {
+    "value": "2.000",
+    "disabled": false,
+    "readonly": false
+  },
+  "sustrato_04": {
+    "value": "HENS DROPPING ",
+    "disabled": false,
+    "readonly": false
+  },
+  "cantidad_04": {
+    "value": "2.000",
+    "disabled": false,
+    "readonly": false
+  },
+  "sustrato_05": {
+    "value": "POULTRY DUNG",
+    "disabled": false,
+    "readonly": false
+  },
+  "cantidad_05": {
+    "value": "5.000",
+    "disabled": false,
+    "readonly": false
+  },
+  "sustrato_06": {
+    "value": "CITRIC FRUIT WASTE",
+    "disabled": false,
+    "readonly": false
+  },
+  "cantidad_06": {
+    "value": "5.000",
+    "disabled": false,
+    "readonly": false
+  },
+  "sustrato_07": {
+    "value": "VEGETABLE WASTES GEN",
+    "disabled": false,
+    "readonly": false
+  },
+  "cantidad_07": {
+    "value": "5.000",
+    "disabled": false,
+    "readonly": false
+  },
+  "sustrato_08": {
+    "value": "",
+    "disabled": false,
+    "readonly": false
+  },
+  "cantidad_08": {
+    "value": "0",
+    "disabled": true,
+    "readonly": false
+  },
+  "sustrato_09": {
+    "value": "",
+    "disabled": false,
+    "readonly": false
+  },
+  "cantidad_09": {
+    "value": "0",
+    "disabled": true,
+    "readonly": false
+  },
+  "sustrato_10": {
+    "value": "",
+    "disabled": false,
+    "readonly": false
+  },
+  "cantidad_10": {
+    "value": "0",
+    "disabled": true,
+    "readonly": false
+  },
+  "cantidad_11": {
+    "value": "3.000",
+    "disabled": false,
+    "readonly": false
+  },
+  "cantidad_12": {
+    "value": "17.900",
+    "disabled": false,
+    "readonly": false
+  },
+  "ms_max_recirculacion": {
+    "value": "3,35",
+    "disabled": false,
+    "readonly": false
+  },
+  "max_NO": {
+    "value": "0,30",
+    "disabled": false,
+    "readonly": false
+  },
+  "max_NH4": {
+    "value": "0,45",
+    "disabled": false,
+    "readonly": false
+  },
+  "max_P2O5": {
+    "value": "0,60",
+    "disabled": false,
+    "readonly": false
+  },
+  "max_K2O": {
+    "value": "0,50",
+    "disabled": false,
+    "readonly": false
+  },
+  "conversion_mo_primario": {
+    "value": "77,4",
+    "disabled": false,
+    "readonly": false
+  },
+  "ms_fraccion_solida": {
+    "value": "25,0",
+    "disabled": false,
+    "readonly": false
+  },
+  "digestores_primarios": {
+    "value": "2",
+    "disabled": false,
+    "readonly": false
+  },
+  "rendimiento_separador": {
+    "value": "18",
+    "disabled": false,
+    "readonly": false
+  },
+  "dimension_digestores_01": {
+    "value": "30",
+    "disabled": false,
+    "readonly": false
+  },
+  "digestores_secundarios": {
+    "value": "1",
+    "disabled": false,
+    "readonly": false
+  },
+  "eficiencia_reformado": {
+    "value": "98,40",
+    "disabled": false,
+    "readonly": false
+  },
+  "dimension_digestores_02": {
+    "value": "32",
+    "disabled": false,
+    "readonly": false
+  },
+  "dimension_digestores_03": {
+    "value": "7",
+    "disabled": false,
+    "readonly": false
+  },
+  "input_cargar": {
+    "value": "",
+    "disabled": false,
+    "readonly": false
+  }
+}

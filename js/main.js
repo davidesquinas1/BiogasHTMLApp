@@ -891,29 +891,31 @@ document.addEventListener("DOMContentLoaded", () => {
 	/* actualizar el resumen */
 	
 	/* relojes del resumen */
+
+  const LIMITE_ROJO = 0.75;
 	
 	// MS máximo será 10%
 	let m_valor = parseFloat(document.getElementById('ms_digestor_primario_02').innerText.replace(',', '.').trim());
 	console.log("Reloj 1: ", m_valor);
-	let p_valor = Math.min(1, m_valor / 10) * 100;
+	let p_valor = Math.min(1, m_valor / 13.333333333333333) * 105; // correccion por color
     new ControlReloj('reloj_1').actualizar_reloj(p_valor, m_valor);
     
 	// Tiempo de residencia mínimo serán 40 días (es inverso) 
 	m_valor = parseFloat(document.getElementById('tiempo_residencia').innerText.replace(',', '.').trim());
 	console.log("Reloj 2: ", m_valor);
-	p_valor = Math.min(1, Math.abs((40 / m_valor) - 1)) * 100;
+	p_valor = (Math.max(0, (80 - m_valor)) / 80) * 100;
     new ControlReloj('reloj_2').actualizar_reloj(p_valor, m_valor);
 	
 	// Carga orgánica, máximo 4
 	m_valor = parseFloat(document.getElementById('carga_organica').innerText.replace(',', '.').trim());
 	console.log("Reloj 3: ", m_valor);
-	p_valor = Math.min(1, m_valor / 4) * 100;
+	p_valor = Math.min(1, m_valor / 5.333333333333333) * 105; // correccion por color
     new ControlReloj('reloj_3').actualizar_reloj(p_valor, m_valor);	
 	
 	// In. amoniacal, máximo 5%
 	m_valor = parseFloat(document.getElementById('inhibicion_amoniacal').innerText.replace(',', '.').trim());
 	console.log("Reloj 4: ", m_valor);
-	p_valor = Math.min(1, m_valor / 5) * 100;
+	p_valor = Math.min(1, m_valor / 6.666666666666667) * 105; // correccion por color
     new ControlReloj('reloj_4').actualizar_reloj(p_valor, m_valor);	
 	
 	// indicadores resumen
